@@ -1,0 +1,74 @@
+/* grid */
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+[class*="col-"] {
+  float: left;
+  padding: 1em;
+  border: .067em solid white;
+  text-align: center;
+  
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* body */
+body {
+  background-color: #FBFCFD;
+}
+
+.calc {
+  width: 20em;
+  margin: 6% auto;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+}
+[class="col-12"] {
+  padding: 0;
+}
+.screen {
+  width: 100%;
+  font-size: 3em;
+  text-align: right;
+  border: .063em solid lightgray;
+}
+.num {
+  background-color: #AA928A;
+}
+.num:hover {
+  background-color: #CABBB6;
+}
+.op {
+  background-color: #4DB6AC;
+}
+.op:hover {
+  background-color: #90D1CB;
+}
+.clear {
+  background-color: #B64D57;
+}
+.clear:hover {
+  background-color: #D19096;
+}
+.equal {
+  background-color: #AC4DB6;
+}
+.equal:hover {
+  background-color: #CB90D1;
+}
